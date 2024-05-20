@@ -1,14 +1,15 @@
-// connect with mongoDB using Mongoose
-let connectWithMongo = require('./database');
-connectWithMongo();
-
-// Create API using express
 const express = require('express')
-const app = express()
-const port = 5000
-
 // cors
 var cors = require('cors')
+
+// connect with mongoDB using Mongoose
+let connectWithMongo = require('./database');
+
+// Create API using express
+const app = express()
+const port = 6000
+
+connectWithMongo();
 
 // Middleware
 app.use( express.json() );
