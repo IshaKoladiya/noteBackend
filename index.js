@@ -7,7 +7,7 @@ let connectWithMongo = require('./database');
 
 // Create API using express
 const app = express()
-const port = 6000
+const port = 5000
 
 connectWithMongo();
 
